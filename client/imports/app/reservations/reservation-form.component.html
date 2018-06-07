@@ -1,0 +1,24 @@
+
+<div class="container">
+    <form [formGroup]="addForm" (ngSubmit)="addReservation()">
+
+        <div >
+            <label>Number of Seats</label>
+            <input id="numberSeats" type="number" formControlName="numberSeats">
+
+        </div>
+
+        <my-date-picker (dateChanged)="onDateChanged($event)"  name="dateS" [options]="myDateRangePickerOptions"
+                        formControlName="dateS"></my-date-picker>
+
+        <input  type="text" class="time start" formControlName="timeStart" />
+        to
+        <input  type="text" class="time2 end" formControlName="timeEnd" />
+        <menus-list-for-form (messageEvent)="chooseMenu($event)"></menus-list-for-form>
+        <button class="btn btn-primary"  [disabled]="!addForm.valid" type="submit">Add</button>
+
+
+    </form>
+
+
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <form [formGroup]="addForm" (ngSubmit)="addTime()">
+
+
+
+        <my-date-picker  name="day" [options]="myDateRangePickerOptions"
+                         formControlName="day"></my-date-picker>
+
+        <input  type="text" class="timee start" formControlName="timeS" />
+        to
+        <input  type="text" class="timee2 end" formControlName="timeE" />
+        <button class="btn btn-primary"  [disabled]="!addForm.valid" type="submit">Add</button>
+    </form>
+
+
+</div>

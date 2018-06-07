@@ -1,0 +1,16 @@
+<form *ngIf="table" (submit)="saveParty()">
+  <label>num</label>
+  <input type="text" [(ngModel)]="table.num" name="num">
+
+  <label>Description</label>
+  <input type="text" [(ngModel)]="table.description" name="description">
+
+  <label>Max_seats</label>
+  <input type="text" [(ngModel)]="table.max_seats" name="max_seats">
+
+    <label>price</label>
+    <input type="text" [(ngModel)]="table.price" name="price">
+
+  <button type="submit">Save</button>
+  <a [routerLink]="['/']">Cancel</a>
+</form>

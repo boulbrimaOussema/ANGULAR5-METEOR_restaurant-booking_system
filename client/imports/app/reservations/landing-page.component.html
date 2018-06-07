@@ -1,0 +1,181 @@
+
+<style>
+
+    h3, h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: #111;
+    }
+    .container {
+        padding: 80px 120px;
+    }
+    .person {
+        border: 10px solid transparent;
+        margin-bottom: 25px;
+        width: 80%;
+        height: 80%;
+        opacity: 0.7;
+    }
+    .person:hover {
+        border-color: #f1f1f1;
+    }
+    .carousel-inner img {
+        -webkit-filter: grayscale(90%);
+        filter: grayscale(90%); /* make all photos black and white */
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+    }
+    .carousel-caption h3 {
+        color: #fff !important;
+    }
+    @media (max-width: 600px) {
+        .carousel-caption {
+            display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+        }
+    }
+    .bg-1 {
+        background: #2d2d30;
+        color: #bdbdbd;
+    }
+    .bg-1 h3 {color: #fff;}
+    .bg-1 p {font-style: italic;}
+    .list-group-item:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .list-group-item:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+    .thumbnail p {
+        margin-top: 15px;
+        color: #555;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: .2s;
+    }
+    .btn:hover, .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+    }
+    .modal-header, h4, .close {
+        background-color: #333;
+        color: #fff !important;
+        text-align: center;
+        font-size: 30px;
+    }
+    .modal-header, .modal-body {
+        padding: 40px 50px;
+    }
+
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+    }
+    footer a {
+        color: #f5f5f5;
+    }
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+    .form-control {
+        border-radius: 0;
+    }
+    textarea {
+        resize: none;
+    }
+
+
+
+    .page-header {
+        background-image: url("https://u1iqw3rc5e2emcmj3x7naufc-wpengine.netdna-ssl.com/wp-content/uploads/2014/06/04-Galleri.jpg") ;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+    }
+
+</style>
+
+<!-- Container (The Band Section) -->
+<header class="masthead text-white text-center page-header" >
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5">come and explore the real meaning of TASTE</h1>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+
+                        
+                            <button class="btn btn-block btn-lg btn-primary wow bounceInUp" data-toggle="modal" data-target="#myModal">BOOK NOW</button>
+
+
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="band" class="container text-center">
+    <h3>Welcome Message</h3>
+    <p><em>We love music!</em></p>
+    <p>Come to experience the exceptional gastronomic voyage in the ultimate venue. Our authentic cuisine unites people connecting history and traditions in the warm and friendly atmosphere. In collaboration with working background the kitchen creates modern, seasonal and focused on your pleasure dishes. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more.</p>
+    <br>
+
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <reservations-form [disabled]="dis" ></reservations-form>            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<img ng-src="{}/client/imports/app/reservations/dd.jpg">
+

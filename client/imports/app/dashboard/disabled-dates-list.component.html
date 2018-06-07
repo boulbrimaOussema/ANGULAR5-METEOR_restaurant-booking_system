@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Not Working days</h2>
+    <p> .....</p>
+    <div class="table-responsive " >
+        <table class="table" id="table" >
+            <thead>
+            <tr>
+
+                <th>date start</th>
+                <th>date end</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let dis of disabled_dates | async">
+                <td>{{dis.Date.beginJsDate | date :'short'  }}</td>
+                <td>{{dis.Date.endJsDate | date :'short' }}</td>
+
+
+                <td><button class="btn btn-danger"(click)="clickMethod(dis._id,dis)">Delete dis</button></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

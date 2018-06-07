@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Reductions</h2>
+    <p> .....</p>
+    <div class="table-responsive " >
+        <table class="table" id="table" >
+            <thead>
+            <tr>
+
+                <th>date start</th>
+                <th>date end</th>
+                <th>pourcentage</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let red of reductions | async">
+                <td>{{red.date.beginJsDate | date :'short'  }}</td>
+                <td>{{red.date.endJsDate | date :'short' }}</td>
+                <td>{{red.pourcentage  }}</td>
+
+
+                <td><button class="btn btn-danger"(click)="clickMethod(dis._id,dis)">Delete dis</button></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

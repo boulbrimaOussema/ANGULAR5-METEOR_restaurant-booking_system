@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Days that have a spcl Times</h2>
+    <p>....</p>
+    <div class="table-responsive " >
+        <table class="table" id="table" >
+            <thead>
+            <tr>
+
+                <th>date start</th>
+                <th>date end</th>
+                <th>date end</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let spcl of spcl_times | async">
+                <td>{{spcl.day}}</td>
+                <td>{{spcl.timeS}}</td>
+                <td>{{spcl.timeE}}</td>
+
+
+                <td><button class="btn btn-danger"(click)="clickMethod(spcl._id,spcl)">Delete dis</button></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
